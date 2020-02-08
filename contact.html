@@ -4,40 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>contact</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        Dexter Sampson
-            <nav>
-                <a href= "index.html">About</a>
-                <a href= "portfolio.html">Portfolio</a>
-                <a href= "contact.html">Contact</a>
-            </nav>
-    </header>
-
-    <fieldset>
-        <h1>Contact</h1>
-        <hr>
-
-        <form>
-            <label>Name</label><br>
-                <input type= "text" name= "name="fullname" placeholder="John Smith"><br>
-                
-            <label>Email</label><br>
-                <input type= "text" name= "name="email" placeholder="example@gmail.com"><br>
-            
-                
-            <label>Message</label><br>
-
-            <textarea></textarea><br>
-
-            <input type="submit" value="Submit"/>
+    <div class="mainHeader">
         
-        </form>
+        <header>Dexter Sampson</header>
+        
+        <nav>
+            <ul>
+                <li class= "vertical"><a href= "index.html">About</a></li>
+                <li class= "vertical" ><a href="portfolio.html">Portfolio</a></li>
+                <li><a href= "contact.html">Contact</a></li>
+            </ul>        
+        </nav>
+    </div>
+  
 
+    <div class="mainContent">
 
-    </fieldset>
+        <h2>Contact</h2>
+            
+            <form>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="John Smith">
+                    
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="email@gmail.com">
+            
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+            </form>
+            
+    </div>
 
     <footer>
         Copyright ©
